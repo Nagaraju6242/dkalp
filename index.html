@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>D'Kalp</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- lottie Animation JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <nav class="navbar smart-scroll">
+      <div class="logo_img"><img src="./images/dkalp.svg" alt="Logo" /></div>
+      <div class="nav_links">
+        <ul>
+          <li><a href="#schedule" class="nav_item">Schedule</a></li>
+          <li><a href="#categories" class="nav_item">categories</a></li>
+          <li><a href="#webinars" class="nav_item">webinars</a></li>
+          <li><a href="#awards" class="nav_item">Awards</a></li>
+          <li><a href="#contact" class="nav_item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a class="hamburger_link" href="javascript:void(0);" onclick="myFunction()">
+      <i class="fa fa-bars" style="color: white; transform: scale(2.5)"></i
+    ></a>
+    <div class="collap">
+      <div class="green_collap"></div>
+      <div class="white_collap">
+        <ul>
+          <li class="col_item">
+            <a href="#schedule" onclick="remove()">Schedule</a>
+          </li>
+          <li class="col_item">
+            <a href="#categories" onclick="remove()">categories</a>
+          </li>
+          <li class="col_item">
+            <a href="#webinars" onclick="remove()">webinars</a>
+          </li>
+          <li class="col_item">
+            <a href="#awards" onclick="remove()">Awards</a>
+          </li>
+          <li class="col_item">
+            <a href="#contact" onclick="remove()">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <a
+        class="hamburger_link"
+        href="javascript:void(0);"
+        onclick="myFunction()"
+      >
+        <i class="fa fa-bars" style="color: #198875; transform: scale(2.5)"></i
+      ></a>
+    </div>
+    <section class="main">
+      <img
+        class="main_xp_pen hide_mobile"
+        src="./images/xp_pen.svg"
+        alt="XP-Pen"
+      />
+      <br />
+      <h1 class="main_heading">
+        <span class="show_mobile">XP-PEN</span> <br />
+        D’Kalp Design <br />
+        Challenge 2020
+      </h1>
+      <lottie-player
+        src="lottie/main_dp.json"
+        class="main_dp"
+        background="transparent"
+        speed="0.6"
+        autoplay
+      ></lottie-player>
+      <br />
+      <a href="#" class="main_link white_bg">Information Brochure</a>
+      <a href="#" class="main_link">Register Now</a>
+      <div class="timer_container">
+        Registration Closes in : <span class="timer">Loading...</span>
+      </div>
+      <div class="main_sponser">
+        <span class="organized">Organised by :</span>
+        <img class="show_mobile" src="./images/sponser.svg" alt="Sponser" />
+        <img src="./images/iiitdmj.svg" alt="IIITDMJ" />
+      </div>
+    </section>
+    <section class="wwh">
+      <div class="wwh_container">
+        <div class="wwh_box">
+          <h1 class="wwh_heading">WHAT?</h1>
+          <p>
+            D'Kalp is a Design competition but unlike the usual ones, it is
+            focused on learning rather than just competing. The reason behind
+            the emphasis on learning is that students from non-design
+            backgrounds can also take part along with the design students, as
+            the design thinking is currently the booming word in the industry
+            and is a key skill for all.This kind of learning competition can
+            make participants think in an innovative direction and can pursue
+            their dreams of starting businesses or startups.
+          </p>
+        </div>
+        <div class="wwh_box lottie-box image_box">
+          <lottie-player
+            src="lottie/rotate.json"
+            class="lottie-1"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+          <lottie-player
+            src="lottie/rotate.json"
+            class="lottie-2"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+          <lottie-player
+            src="lottie/rotate.json"
+            class="lottie-3"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="wwh_box image_box">
+          <img
+            class="character_svg"
+            src="./images/character.svg"
+            alt="Characters"
+          />
+        </div>
+        <div class="wwh_box">
+          <h1 class="wwh_heading">WHO?</h1>
+          <p>
+            We are not limiting this for just university/institute students but
+            also encouraging school students, mainly those who have an interest
+            in the design field (i.e., a Design Aspirant). <br /><br />
+            This kind of event will help them become aware of design education
+            through the competition and also help them to build their portfolio!
+          </p>
+        </div>
+      </div>
+      <h1 class="wwh_heading">HOW?</h1>
+      <div class="wwh_how">
+        <img
+          src="./images/process.svg"
+          alt="Process"
+          class="show_mobile process_img"
+        />
+        <div class="grid_lottie_holder">
+          <div class="item_lottie_holder">
+            <lottie-player
+              class="lottie_progress"
+              src="lottie/25.json"
+              background="transparent"
+              speed="0.6"
+            ></lottie-player>
+            <p>Register Yourself</p>
+          </div>
+          <div class="item_lottie_holder">
+            <lottie-player
+              class="lottie_progress"
+              src="lottie/50.json"
+              background="transparent"
+              speed="0.6"
+            ></lottie-player>
+            <p>Select a Problem area</p>
+          </div>
+          <div class="item_lottie_holder">
+            <lottie-player
+              class="lottie_progress"
+              src="lottie/75.json"
+              background="transparent"
+              speed="0.6"
+            ></lottie-player>
+            <p>Attend Webinars</p>
+          </div>
+          <div class="item_lottie_holder">
+            <lottie-player
+              class="lottie_progress"
+              src="lottie/95.json"
+              background="transparent"
+              speed="0.6"
+            ></lottie-player>
+            <p>Submit your entry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="back_to_top" href="#"><img src="./images/top.svg" alt="Top" /></a>
+
+    <section class="schedule" id="schedule">
+      <h1>SCHEDULE</h1>
+      <p>The contest will run from <b>Dec, 2020 ~ Jan 2021.</b></p>
+      <p class="p_left">
+        Keeping in mind about current circumstances, the final Award Ceremony
+        could also be a virtual / online event.
+      </p>
+      <p class="compete">COMPETE</p>
+      <div class="holder">
+        <img
+          src="./images/schedule_mobile.svg"
+          class="show_mobile schedule_img_mobile"
+          alt=""
+        />
+        <img class="schedule_img" src="./images/schedule.svg" alt="" />
+        <div class="box box_1 2020-12-20">
+          <h3>20 Dec, 2020</h3>
+          <p>Registration Closes</p>
+        </div>
+        <div class="box box_2 2021-01-15">
+          <h3>15 Jan, 2021</h3>
+          <p>Research Submission Closes</p>
+        </div>
+        <div class="box box_3 2021-01-30">
+          <h3>30 Jan, 2021</h3>
+          <p>Concept Submission Closes</p>
+        </div>
+        <div class="box box_4 2021-02-10">
+          <h3>10 Feb, 2021</h3>
+          <p>Pitching Presentation</p>
+        </div>
+        <div class="box box_5 2021-02-15">
+          <h3>15 Feb, 2021</h3>
+          <p>Announcement of Winners</p>
+        </div>
+        <div class="box box_6 2021-01-03">
+          <h3>01-03 Jan, 2021</h3>
+          <p>Webinars on Design Research</p>
+        </div>
+        <div class="box box_7 2021-01-19">
+          <h3>17-19 Jan, 2021</h3>
+          <p>Webinars on Concept Building</p>
+        </div>
+        <div class="box box_8 2021-02-03">
+          <h3>01-03 Feb, 2021</h3>
+          <p>Webinars on Pitching & Business</p>
+        </div>
+      </div>
+      <p class="show_mobile p_left">
+        *Please refer to the desktop website with regard to more information
+        about the webinar dates and topics
+      </p>
+    </section>
+
+    <section class="categories" id="categories">
+      <h1>Categories</h1>
+      <p>
+        Xp-pen D’kalp Design Challenge is inviting students to work and build
+        solutions on the problems directly <br />
+        sourced from NGOs and Design Driven Organizations.
+      </p>
+      <h3>
+        Level 1 - School Students (Class 10 to 12) <br />Level 2 - Under
+        Graduate Student <br />Level 3 - Post Graduate Student
+      </h3>
+      <h1>Eligibility criteria</h1>
+      <p>
+        <b>Level 1 -</b> School students studying in class 10th or above.
+        (diploma studenst are also eligible). Students who took a year drop
+        after class 12, can also participate in this category.
+      </p>
+      <p>
+        <b>Level 2 -</b> Under Graduate students from any discipline are
+        eligible for this category. Students who have graduated in/after 2019
+        and took a drop for PG preparation can participate in this category. One
+        must not be a post graduate student. Entries might get disqualified at
+        any time if found.
+      </p>
+      <p>
+        <b>Level 3 - </b> Post Graduate student from any discipline are eligible
+        for this category.
+      </p>
+      <h1>Problem Statements</h1>
+      <p>
+        Our problem statements are directly taken from NGO / Design driven
+        Orgnization to give the real world experience to the participants. below
+        is the list of problem statement for each categories.
+      </p>
+      <p>
+        We are also providing you a link to youtube from which you can deep dive
+        into the problem statemnt . In this link you will find direct session
+        with the people who gave us problem statement.
+      </p>
+    </section>
+
+    <section class="problems">
+      <p class="problems_heading">LEVEL 1: SCHOOL STUDENTS</p>
+      <div class="pgrid_container">
+        <div class="pgrid_box">
+          <h1>Problem area 1</h1>
+          <p>
+            To enable access to digital services through appropriate hardware
+            and software services for physically challenged especially for the
+            blind (e.g. braille enabled systems or cc) or hard of hearing and
+            otherwise physically challenged people to access the online
+            opportunities, and services with relative ease.
+          </p>
+          <a href="#" class="youtube_icon"
+            ><img src="./images/youtube.svg" alt="Youtube"
+          /></a>
+          <img src="./images/dscope.svg" alt="D'Scope" class="pbrand" />
+        </div>
+        <div class="pgrid_box">
+          <h1>Problem area 2</h1>
+          <p>
+            The current market economics of aggregation is spiralling into an
+            irreversible and unsustainable social situation where the disparity
+            of wealth is widening at an alarming rate potentially leading to a
+            social imbalance and eventual breakdown.
+          </p>
+          <a href="#" class="youtube_icon"
+            ><img src="./images/youtube.svg" alt="Youtube"
+          /></a>
+          <img src="./images/wicr.svg" alt="D'Scope" class="pbrand" />
+        </div>
+      </div>
+      <hr class="line" />
+      <p class="problems_heading">LEVEL 2 : UNDERGRADUATE STUDENTS</p>
+      <div class="pgrid_container">
+        <div class="pgrid_box">
+          <h1>Problem area 1</h1>
+          <p>
+            How might we help the youth realize, accept and work on the
+            vulnerabilities that lead to mental health issues leveraging the
+            digital media? The solutions have to promote a self-administered
+            outlet to a healthy mind.
+          </p>
+          <a href="#" class="youtube_icon"
+            ><img src="./images/youtube.svg" alt="Youtube"
+          /></a>
+          <img src="./images/dscope.svg" alt="D'Scope" class="pbrand" />
+        </div>
+        <div class="pgrid_box">
+          <h1>Problem area 2</h1>
+          <p>
+            To enable access to digital services through appropriate hardware
+            and software services for physically challenged especially for the
+            blind (e.g. braille enabled systems or cc) or hard of hearing and
+            otherwise physically challenged people to access the online
+            opportunities, and services with relative ease.
+          </p>
+          <a href="#" class="youtube_icon"
+            ><img src="./images/youtube.svg" alt="Youtube"
+          /></a>
+          <img src="./images/wicr.svg" alt="D'Scope" class="pbrand" />
+        </div>
+      </div>
+      <hr class="line" />
+      <p class="problems_heading">LEVEL 3: POST GRADUATE STUDENTS</p>
+      <div class="pgrid_box middle">
+        <h1>Problem area</h1>
+        <p>
+          To enable access to digital services through appropriate hardware and
+          software services for physically challenged especially for the blind
+          (e.g. braille enabled systems or cc) or hard of hearing and otherwise
+          physically challenged people to access the online opportunities, and
+          services with relative ease.
+        </p>
+        <a href="#" class="youtube_icon"
+          ><img src="./images/youtube.svg" alt="Youtube"
+        /></a>
+        <img src="./images/dscope.svg" alt="D'Scope" class="pbrand" />
+      </div>
+    </section>
+
+    <section class="webinars" id="webinars">
+      <h1>Webinars</h1>
+      <div class="webinar_links">
+        <a href="#!" class="webinar_link">Design Research</a>
+        <a href="#!" class="webinar_link">Concept Building</a>
+        <a href="#!" class="webinar_link">Business & Pitching</a>
+      </div>
+      <div class="people_grid_container">
+        <div class="coming_soon"><h1>Coming Soon</h1></div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_11.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_11.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_11.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_11.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_12.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_12.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_12.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_12.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_13.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_13.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_13.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+        <div class="people_grid_item">
+          <img src="./images/people/image_13.svg" alt="" class="people_img" />
+          <div>
+            <h3>Name</h3>
+            <p>Post</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="awards" id="awards">
+      <h1>Awards</h1>
+      <p>
+        All the participants will receive certificate of appreciation issued by
+        XP Pen D’Kalp Design Challenge 2020.
+      </p>
+      <p>
+        The participants to clear the third and final stage will get the winning
+        prizes.
+      </p>
+      <p>
+        The 5 final winning teams/individuals (2 entries from <b>Level 1,</b> 2
+        entries from <b>Level 2</b> and 1 entry from <b>Level 3</b>) will get
+        the following awards on basis of their category of participation:
+      </p>
+      <div class="awards_holder">
+        <div class="award_box">
+          <h3>
+            LEVEL 01 <br />
+            School Students
+          </h3>
+          <img src="./images/prize_level_1.svg" alt="Prize 1" />
+          <h1>Star 03</h1>
+          <h2>+</h2>
+          <h2>15% Discount Coupon</h2>
+          <h2>+</h2>
+          <h2>Internship Opportunity</h2>
+        </div>
+        <div class="award_box">
+          <h3>
+            LEVEL 02 <br />
+            Under Graduate Students
+          </h3>
+          <img src="./images/prize_level_2.svg" alt="Prize 1" />
+          <h1>Deco 01 V2</h1>
+          <h2>+</h2>
+          <h2>15% Discount Coupon</h2>
+          <h2>+</h2>
+          <h2>Internship Opportunity</h2>
+        </div>
+        <div class="award_box">
+          <h3>
+            LEVEL 03 <br />
+            Post Graduate students
+          </h3>
+          <img src="./images/prize_level_3.svg" alt="Prize 1" />
+          <h1>Deco Pro</h1>
+          <h2>+</h2>
+          <h2>15% Discount Coupon</h2>
+          <h2>+</h2>
+          <h2>Internship Opportunity</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="links">
+      <h1>Important Links*</h1>
+      <div class="links_holder">
+        <a href="#!" class="grid_link grid_link_1">Registration Form</a>
+        <a href="#!" class="grid_link grid_link_2">Information brochure</a>
+        <a href="#!" class="grid_link grid_link_3">Level 1 Template</a>
+        <a href="#!" class="grid_link grid_link_4">Level 2 Template</a>
+        <a href="#!" class="grid_link grid_link_5">Level 3 Template</a>
+      </div>
+      <p>
+        *Please refer to the information brochure for more details regarding the
+        Design kits and submissions. <br />
+        Link of design kits would be active once registration is closed.
+      </p>
+    </section>
+
+    <hr class="section_divider" />
+
+    <section class="partners">
+      <h1>Organizing Partners</h1>
+      <div class="sponser_images">
+        <img
+          src="./images/xppen_big.svg"
+          alt="XP-Pen"
+          class="partner_img xp-pen"
+        />
+        <img src="./images/iiitdmj_big.svg" alt="IIITDMJ" class="partner_img" />
+      </div>
+      <h1>Challenge Partner</h1>
+      <div class="sponser_images">
+        <img src="./images/dscope_big.svg" alt="D'Scope" class="partner_img" />
+        <img src="./images/wicr_big.svg" alt="WICR" class="partner_img" />
+        <img src="./images/teqzo.svg" alt="TeQzo" class="partner_img" />
+      </div>
+    </section>
+    <hr class="half_bright_line" />
+    <section class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="general_queries">
+        <p>
+          General Inquiries & Registration Queries
+          <br />
+          dkalp.challenge@iiitdmj.ac.in<br />
+          <br />
+          Collaboration Queries <br />
+          20mds022@iiitdmj.ac.in
+        </p>
+        <p class="follow_and_support">Follow us & Support</p>
+        <a href="#!" class="social_link"
+          ><img src="./images/linkedin.svg" alt="Linkedin"
+        /></a>
+        <a href="#!" class="social_link insta"
+          ><img src="./images/instagram.svg" alt="instagram"
+        /></a>
+      </div>
+      <div class="info_text">
+        <p>
+          With a balance of learning and competing, our aim is to help students
+          learn to come up with innovative and concrete solutions for real life
+          problems.
+        </p>
+        <p class="bold_text">After all, they are the future of our country.</p>
+      </div>
+      <hr class="last_line hide_mobile" />
+      <p class="terms hide_mobile">FAQ</p>
+      <a
+        class="naga"
+        href="https://www.linkedin.com/in/repalanagaraju/"
+        target="_blank"
+        >Developed by Nagaraju Repala
+        <div class="bbottom"></div>
+      </a>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
