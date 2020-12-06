@@ -12,13 +12,13 @@ var x = setInterval(function () {
 
   timer.innerHTML =
     "&nbsp;&nbsp;" +
-    days +
+    ("0" + days).slice(-2) +
     "days&nbsp;&nbsp;&nbsp;" +
-    hours +
+    ("0" + hours).slice(-2) +
     "h&nbsp;&nbsp;&nbsp;" +
-    minutes +
+    ("0" + minutes).slice(-2) +
     "m&nbsp;&nbsp;&nbsp;" +
-    seconds +
+    ("0" + seconds).slice(-2) +
     "s&nbsp;&nbsp;&nbsp;";
 
   if (distance < 0) {

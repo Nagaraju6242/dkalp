@@ -116,7 +116,7 @@ nav .nav_links ul li a {
   z-index: 2;
 }
 .scrolled-down {
-  transform: translateY(-100%);
+  transform: translateY(-105%);
   transition: all 0.3s ease-in-out;
 }
 .scrolled-up {
@@ -133,7 +133,7 @@ section.main {
   position: relative;
   padding-left: 10rem;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
 }
 
 .main_dp {
@@ -187,13 +187,8 @@ section.main {
   font-size: 1.8rem;
 }
 
-.main div.main_sponser {
-  margin-top: 4rem;
-}
-
-.main_sponser img {
-  margin: auto 2rem;
-  transform: translateY(25%);
+.main div.timer_container {
+  margin: 5rem 0;
 }
 
 /* Section wwh */
@@ -520,10 +515,15 @@ section.problems .problems_heading {
   left: 2rem;
 }
 
+.document_icon {
+  margin-left: 1rem;
+}
+
 .pbrand {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  transform: scale(0.8);
+  bottom: 1rem;
+  right: 0rem;
 }
 
 .line {
@@ -773,6 +773,8 @@ section.partners h1 {
 }
 
 .sponser_images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   margin: 5rem auto;
 }
 
@@ -781,7 +783,6 @@ section.partners h1 {
 }
 
 .partner_img {
-  margin: 2rem 2rem;
   transform: scale(0.8);
 }
 
@@ -886,14 +887,8 @@ a.naga .bbottom {
 
 /* Media Queries */
 @media screen and (min-width: 1300px) {
-  .holder {
-    transform: scale(0.9);
-  }
-  .pgrid_container {
-    width: 85%;
-  }
-  .pgrid_box.middle {
-    width: 40%;
+  html {
+    zoom: 110%;
   }
 }
 
