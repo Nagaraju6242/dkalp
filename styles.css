@@ -522,8 +522,12 @@ section.problems .problems_heading {
 .pbrand {
   position: absolute;
   transform: scale(0.8);
-  bottom: 1rem;
+  bottom: 2rem;
   right: 0rem;
+}
+
+.pbrand.thematchbox {
+  bottom: 1rem;
 }
 
 .line {
@@ -586,9 +590,10 @@ section.webinars h1 {
   z-index: 1;
   position: absolute;
   color: #198875;
+  width: 90%;
   font-size: 7rem !important;
   top: 50%;
-  left: 50%;
+  left: 59%;
   transform: translate(-50%, -50%);
   text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.17);
 }
@@ -778,8 +783,8 @@ section.partners h1 {
   margin: 5rem auto;
 }
 
-.partner_img.xp-pen {
-  transform: translateY(-20%) scale(0.8);
+.partner_img.large_img {
+  transform: translateY(10%) scale(0.8);
 }
 
 .partner_img {
@@ -885,10 +890,16 @@ a.naga .bbottom {
   left: -100%;
 }
 
-/* Media Queries */
 @media screen and (min-width: 1300px) {
   html {
-    zoom: 110%;
+    zoom: 110% !important;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 1900px) {
+  html {
+    zoom: 125% !important;
   }
 }
 
@@ -942,6 +953,9 @@ a.naga .bbottom {
     display: none;
   }
 
+  .people_grid_container {
+    grid-template-columns: 1fr 1fr;
+  }
   .box {
     width: 15rem;
     height: 18vh;
@@ -1047,6 +1061,17 @@ a.naga .bbottom {
     margin: 2rem;
     transform: scale(0.8) !important;
     content: url("./images/dkalp_mobile.svg");
+  }
+  .sponser_images {
+    grid-template-columns: 1fr;
+  }
+
+  .sponser_images img {
+    margin: 1rem auto;
+  }
+
+  hr.half_bright_line {
+    margin: 3rem auto 10rem;
   }
 }
 
