@@ -531,7 +531,7 @@ section.problems .problems_heading {
 
 .pbrand {
   position: absolute;
-  transform: scale(0.8);
+  transform: scale(0.5);
   bottom: 2rem;
   right: 0rem;
 }
@@ -1009,6 +1009,7 @@ a.naga .bbottom {
     grid-template-columns: 1fr;
   }
   .pgrid_box {
+    height: 45rem;
     width: 80%;
     margin: 5rem auto;
   }
@@ -1026,6 +1027,20 @@ a.naga .bbottom {
 
   .partner_img.large_img {
     transform: translate(-10%, 10%) scale(0.5);
+  }
+
+  .youtube_icon {
+    transform: scale(0.8);
+  }
+
+  .pbrand.thematchbox {
+    width: 90%;
+    bottom: 1rem;
+    right: -3rem;
+  }
+
+  .pgrid_box h1 {
+    font-size: 2rem;
   }
 
   .links_holder {
@@ -1101,6 +1116,6 @@ a.naga .bbottom {
 
 @media screen and (max-width: 550px) {
   .pgrid_box {
-    height: 40rem;
+    height: 45rem;
   }
 }
