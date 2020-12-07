@@ -14,6 +14,8 @@ html {
 
 body {
   padding-top: 8rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* NavBar Design */
@@ -583,6 +585,7 @@ section.webinars h1 {
   left: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 
@@ -868,7 +871,7 @@ a.naga {
   font-size: 1.5rem;
   width: 20%;
   height: 25px;
-  transform: translateY(-80%);
+  transform: translateY(-20%);
   margin-left: auto;
   text-decoration: none;
   font-weight: 500;
@@ -953,6 +956,10 @@ a.naga .bbottom {
     display: none;
   }
 
+  .holder {
+    transform: scale(0.8);
+  }
+
   .people_grid_container {
     grid-template-columns: 1fr 1fr;
   }
@@ -1008,6 +1015,11 @@ a.naga .bbottom {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
   }
+
+  .partner_img.large_img {
+    transform: translate(-10%, 10%) scale(0.5);
+  }
+
   .links_holder {
     width: 100%;
     padding: 2rem 6rem;
@@ -1068,6 +1080,10 @@ a.naga .bbottom {
 
   .sponser_images img {
     margin: 1rem auto;
+  }
+
+  .coming_soon h1 {
+    transform: scale(0.8) translate(-80%, -50%);
   }
 
   hr.half_bright_line {
