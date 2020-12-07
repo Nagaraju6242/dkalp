@@ -642,6 +642,7 @@ section.webinars h1 {
 
 section.awards {
   padding: 10rem;
+  padding-bottom: 2rem;
   background-color: rgba(25, 136, 117, 0.18);
 }
 
@@ -649,6 +650,10 @@ section.awards {
   color: #198875;
   margin: 0 0 5rem;
   font-size: 3rem;
+}
+
+p.awards_terms {
+  margin: 5rem auto 0 !important;
 }
 
 .awards p {
