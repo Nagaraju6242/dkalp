@@ -531,9 +531,8 @@ section.problems .problems_heading {
 
 .pbrand {
   position: absolute;
-  transform: scale(0.5);
   bottom: 2rem;
-  right: 0rem;
+  right: 2rem;
 }
 
 .pbrand.thematchbox {
@@ -1036,6 +1035,11 @@ a.naga .bbottom {
 
   .youtube_icon {
     transform: scale(0.8);
+  }
+
+  .pbrand {
+    transform: scale(0.5);
+    right: 0;
   }
 
   .pbrand.thematchbox {
