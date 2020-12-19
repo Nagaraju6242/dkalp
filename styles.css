@@ -42,9 +42,11 @@ nav {
   display: none;
   background-color: #fff;
   position: fixed;
-  width: 100%;
+  width: 50%;
+  transform: translateX(200%);
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  transition: all 0.5s ease;
 }
 
 .collap ul {
@@ -55,18 +57,8 @@ nav {
   margin: 2rem;
 }
 
-.collap .green_collap {
-  width: 50%;
-  display: inline-block;
-  background: radial-gradient(
-    537.2% 719.11% at 0% 100.62%,
-    #0b7788 0.58%,
-    #13a398 100%
-  );
-}
-
 .collap .white_collap {
-  width: 50%;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +190,20 @@ section.main {
 }
 
 .main div.timer_container {
-  margin: 5rem 0;
+  margin: 5rem 0 3rem;
+}
+
+.news_lottie {
+  display: inline-block;
+  transform: translate(-20%, 25%);
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.main p {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 /* Section wwh */
@@ -928,8 +933,12 @@ a.naga .bbottom {
   .main_dp {
     display: none;
   }
-  .main_heading {
+  .xp_pen_design {
     margin-top: 8rem;
+    width: 35%;
+  }
+  .main_heading {
+    margin-top: 2rem;
   }
   .organized {
     display: block;
@@ -1081,7 +1090,7 @@ a.naga .bbottom {
     display: none;
   }
   .collap {
-    display: none;
+    display: flex;
     z-index: 10;
   }
   /* Navbar */
@@ -1127,4 +1136,9 @@ a.naga .bbottom {
   .pgrid_box {
     height: 45rem;
   }
+}
+
+/* Helper Classes */
+.ul {
+  text-decoration: underline;
 }

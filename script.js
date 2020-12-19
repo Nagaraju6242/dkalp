@@ -1,5 +1,5 @@
 var timer = document.querySelector(".timer");
-var countDownDate = new Date("Dec 21, 2020 00:00:00").getTime();
+var countDownDate = new Date("Dec 26, 2020 00:00:00").getTime();
 $(".back_to_top").hide();
 
 var x = setInterval(function () {
@@ -163,17 +163,20 @@ window.onscroll = function () {
 // Responsive
 function myFunction() {
   var collap = document.querySelector(".collap");
-  if (collap.style.display == "none" || collap.style.display == "") {
-    collap.style.display = "flex";
+  if (
+    collap.style.transform == "translateX(200%)" ||
+    collap.style.transform == ""
+  ) {
+    collap.style.transform = "translateX(100%)";
     back_to_top.style.opacity = 0;
   } else {
-    collap.style.display = "none";
+    collap.style.transform = "translateX(200%)";
     back_to_top.style.opacity = 1;
   }
 }
 
 function remove() {
   var collap = document.querySelector(".collap");
-  collap.style.display = "none";
+  collap.style.transform = "translateX(200%)";
   back_to_top.style.opacity = 1;
 }
