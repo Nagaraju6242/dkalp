@@ -73,19 +73,6 @@ $(function () {
 
 currdate = new Date();
 
-list = [0, 5, 1, 6, 2, 7, 3, 4];
-
-var boxes = document.querySelectorAll(".box");
-for (var i = 0; i < 8; i++) {
-  date = new Date(boxes[list[i]].classList[2]);
-  if (date.getTime() >= currdate.getTime()) {
-    boxes[list[i]].className += " box_running";
-    break;
-  } else {
-    boxes[list[i]].className += " box_expired";
-  }
-}
-
 function isElementInViewport(el) {
   // Special bonus for those using jQuery
   if (typeof jQuery === "function" && el instanceof jQuery) {
