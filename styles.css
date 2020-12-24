@@ -803,6 +803,11 @@ section.partners h1 {
   margin: 5rem auto;
 }
 
+.grid_1_by_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .partner_img.large_img {
   transform: translateY(10%) scale(0.8);
 }

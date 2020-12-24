@@ -1,5 +1,5 @@
 var timer = document.querySelector(".timer");
-var countDownDate = new Date("Dec 26, 2020 00:00:00").getTime();
+var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
 $(".back_to_top").hide();
 
 var x = setInterval(function () {
