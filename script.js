@@ -123,19 +123,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-var bbottom = document.querySelector("a.naga .bbottom");
-var naga = document.querySelector("a.naga");
-naga.onmouseenter = function () {
-  bbottom.style.left = 0;
-};
-
-naga.onmouseleave = function () {
-  bbottom.style.left = "100%";
-  setTimeout(function () {
-    bbottom.style.left = "-100%";
-  }, 1000);
-};
-
 back_to_top = document.querySelector(".back_to_top");
 var contact = document.getElementById("contact");
 window.onscroll = function () {
