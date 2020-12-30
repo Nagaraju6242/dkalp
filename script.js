@@ -154,3 +154,11 @@ function remove() {
   collap.style.transform = "translateX(200%)";
   back_to_top.style.opacity = 1;
 }
+
+$(document).ready(function () {
+  //Event for pushed the video
+  $("#carouselExampleIndicators").carousel({
+    pause: true,
+    interval: false,
+  });
+});

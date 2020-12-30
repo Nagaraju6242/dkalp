@@ -18,6 +18,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: auto !important;
 }
 
 body {
@@ -367,6 +368,7 @@ section.schedule {
 .box h3 {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
   color: #198875;
 }
 
@@ -513,6 +515,7 @@ section.problems .problems_heading {
 .pgrid_box h1 {
   font-size: 3rem;
   margin: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -564,82 +567,83 @@ section.webinars h1 {
   font-size: 3rem;
 }
 
-.webinar_links {
-  margin-top: 10rem;
-  width: 100%;
-}
-
-.webinar_link {
+.d-block.w-100 {
   text-align: center;
-  color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
-  display: inline-block;
-  width: calc((100% - 16rem) / 3);
-  margin: auto 2rem;
-  background-color: #198875;
-  border-radius: 10rem;
-  padding: 1.5rem 3rem;
 }
 
-.people_grid_container {
-  position: relative;
-  margin-top: 5rem;
+.grid-col-heading {
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem auto;
+  padding: 1rem 5rem;
+  background-color: #198875;
+  color: #fff;
+}
+
+.grid-col-heading-yellow {
+  background-color: #f6ca68;
+}
+
+.grid-cor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin: 5rem auto;
 }
 
-.coming_soon {
+.grid-cor.grid-cor-blur {
+  position: relative;
+}
+
+.grid-cor-blur::after {
+  content: "To be Revealed Soon";
+  padding-top: 35%;
+  color: #198875;
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.17);
   position: absolute;
   width: 100%;
-  z-index: 1;
   height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(255, 255, 255, 0.28);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px) grayscale(1);
+  backdrop-filter: blur(10px) grayscale(1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.coming_soon h1 {
-  z-index: 1;
-  position: absolute;
+.cor-item {
   color: #198875;
-  width: 90%;
-  font-size: 7rem !important;
-  top: 50%;
-  left: 59%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.17);
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-.people_grid_item {
-  padding: 1rem;
+.cor-item img:first-child {
+  width: 65%;
 }
 
-.people_grid_item div {
-  margin-left: 10%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.people_grid_item .people_img {
-  display: inline-block;
-  z-index: 0;
-  transform: scale(0.8);
-  vertical-align: middle;
-}
-
-.people_grid_item h3 {
-  color: #0d808b;
+.cor-item h3 {
+  margin: 2rem;
   font-size: 1.6rem;
   font-weight: 700;
+  text-decoration: underline;
 }
 
-.people_grid_item p {
-  color: #0d808b;
+.cor-item p {
   font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
+  margin: 1rem;
+}
+
+.cor-item h5 {
+  font-size: 2.25rem;
+  font-weight: 100;
+}
+
+.carousel-control-next {
+  transform: translate(50%, -15%);
+}
+
+.carousel-control-prev {
+  transform: translate(-50%, -15%);
 }
 
 /* Section Awards */
@@ -742,6 +746,10 @@ section.links {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.grid_link:hover {
+  color: #fff;
 }
 
 .grid_link.grid_link_1 {
@@ -870,6 +878,10 @@ section.contact {
 
 .social_link {
   margin-right: 2rem;
+}
+
+.social_link img {
+  vertical-align: baseline;
 }
 
 .insta img {
@@ -1024,6 +1036,27 @@ a.naga:hover {
   .pgrid_box.middle {
     width: 75%;
   }
+
+  .cor-item h3 {
+    font-size: 1rem;
+  }
+
+  .cor-item p {
+    font-size: 0.8rem;
+  }
+
+  .cor-item h5 {
+    font-size: 1rem;
+  }
+
+  .cor-item h4 {
+    font-size: 1rem;
+  }
+
+  .grid-cor-blur::after {
+    font-size: 3rem;
+  }
+
   .webinar_link {
     width: 100%;
     margin: 5rem auto;
@@ -1140,4 +1173,8 @@ a.naga:hover {
 /* Helper Classes */
 .ul {
   text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
 }

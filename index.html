@@ -7,6 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>D'Kalp</title>
     <!-- Fonts -->
@@ -489,97 +495,159 @@
 
     <section class="webinars" id="webinars">
       <h1>Webinars</h1>
-      <div class="webinar_links">
-        <span class="webinar_link">Design Research</span>
-        <span class="webinar_link">Concept Building</span>
-        <span class="webinar_link">Business & Pitching</span>
-      </div>
-      <div class="people_grid_container">
-        <div class="coming_soon"><h1>To be Revealed Soon</h1></div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_11.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-interval="false"
+        data-ride="carousel"
+        data-pause="hover"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100">
+              <span class="grid-col-heading">Design Research</span>
+              <div class="grid-cor">
+                <div class="cor-item">
+                  <img src="./images/people/people_1.png" alt="" />
+                  <h3>Design Research Methodology</h3>
+                  <p>02 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Hrushikesh Joshi</h4>
+                  <p>
+                    Senior Design Researcher <br />
+                    Studio 5B | Dr. Reddy's Laboratories
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/people_2.png" alt="" />
+                  <h3>Field and Data-driven Research</h3>
+                  <p>03 JAN 2021 , 04:00 - 05:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Zeenal Patel</h4>
+                  <p>
+                    Head of Design, UX <br />
+                    AJIO.com
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/people_3.png" alt="" />
+                  <h3>User-Centered Design</h3>
+                  <p>03 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Rajiv Surya</h4>
+                  <p>
+                    User Experience Designer <br />
+                    Jio Tesseract
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <span class="grid-col-heading grid-col-heading-yellow"
+                >Concept Building</span
+              >
+              <div class="grid-cor grid-cor-blur">
+                <div class="cor-item">
+                  <img src="./images/people/ph1.png" alt="" />
+                  <h3>Design Research Methodology</h3>
+                  <p>02 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Hrushikesh Joshi</h4>
+                  <p>
+                    Senior Design Researcher <br />
+                    Studio 5B | Dr. Reddy's Laboratories
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/ph2.png" alt="" />
+                  <h3>Field and Data-driven Research</h3>
+                  <p>03 JAN 2021 , 04:00 - 05:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Zeenal Patel</h4>
+                  <p>
+                    Head of Design, UX <br />
+                    AJIO.com
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/ph3.png" alt="" />
+                  <h3>User-Centered Design</h3>
+                  <p>03 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Rajiv Surya</h4>
+                  <p>
+                    User Experience Designer <br />
+                    Jio Tesseract
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <span class="grid-col-heading">Business & Pitching</span>
+              <div class="grid-cor grid-cor-blur">
+                <div class="cor-item">
+                  <img src="./images/people/ph4.png" alt="" />
+                  <h3>Design Research Methodology</h3>
+                  <p>02 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Hrushikesh Joshi</h4>
+                  <p>
+                    Senior Design Researcher <br />
+                    Studio 5B | Dr. Reddy's Laboratories
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/ph5.png" alt="" />
+                  <h3>Field and Data-driven Research</h3>
+                  <p>03 JAN 2021 , 04:00 - 05:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Zeenal Patel</h4>
+                  <p>
+                    Head of Design, UX <br />
+                    AJIO.com
+                  </p>
+                </div>
+                <div class="cor-item">
+                  <img src="./images/people/ph6.png" alt="" />
+                  <h3>User-Centered Design</h3>
+                  <p>03 JAN 2021 , 06:00 - 07:30 PM</p>
+                  <h5>|</h5>
+                  <h4>Rajiv Surya</h4>
+                  <p>
+                    User Experience Designer <br />
+                    Jio Tesseract
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_11.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_11.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_11.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_12.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_12.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_12.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_12.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_13.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_13.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_13.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
-        <div class="people_grid_item">
-          <img src="./images/people/image_13.svg" alt="" class="people_img" />
-          <div>
-            <h3>Name</h3>
-            <p>Post</p>
-          </div>
-        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="" aria-hidden="true"
+            ><img src="./images/left_arrow.svg" alt=""
+          /></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="" aria-hidden="true"
+            ><img src="./images/right_arrow.svg" alt=""
+          /></span>
+          <span class="visually-hidden">Next</span>
+        </a>
       </div>
     </section>
 
@@ -760,6 +828,11 @@
         >Developed by Nagaraju Repala
       </a>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
