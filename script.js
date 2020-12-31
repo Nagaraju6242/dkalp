@@ -1,31 +1,4 @@
-var timer = document.querySelector(".timer");
-var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
 $(".back_to_top").hide();
-
-var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  timer.innerHTML =
-    "&nbsp;&nbsp;" +
-    ("0" + days).slice(-2) +
-    "days&nbsp;&nbsp;&nbsp;" +
-    ("0" + hours).slice(-2) +
-    "h&nbsp;&nbsp;&nbsp;" +
-    ("0" + minutes).slice(-2) +
-    "m&nbsp;&nbsp;&nbsp;" +
-    ("0" + seconds).slice(-2) +
-    "s&nbsp;&nbsp;&nbsp;";
-
-  if (distance < 0) {
-    clearInterval(x);
-    timer.innerHTML = "Closed";
-  }
-}, 1000);
 
 if ($(".smart-scroll").length > 0) {
   // check if element exists
@@ -162,3 +135,29 @@ $(document).ready(function () {
     interval: false,
   });
 });
+
+//Carousel
+
+item = document.querySelectorAll(".carousel-item");
+left = document.querySelector(".carousel-control-prev");
+right = document.querySelector(".carousel-control-next");
+
+left.style.display = "none";
+
+left.onclick = function () {
+  if (item[1].classList.contains("active")) {
+    left.style.display = "none";
+  }
+  if (item[2].classList.contains("active")) {
+    right.style.display = "flex";
+  }
+};
+
+right.onclick = function () {
+  if (item[1].classList.contains("active")) {
+    right.style.display = "none";
+  }
+  if (item[0].classList.contains("active")) {
+    left.style.display = "flex";
+  }
+};
