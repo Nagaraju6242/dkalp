@@ -1,5 +1,32 @@
 $(".back_to_top").hide();
 
+var countDownDate = new Date("Jan 16, 2021 00:00:00").getTime();
+
+var x = setInterval(function () {
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML =
+    ("0" + days).slice(-2) +
+    "d &nbsp;" +
+    ("0" + hours).slice(-2) +
+    "h &nbsp;" +
+    ("0" + minutes).slice(-2) +
+    "m &nbsp;" +
+    ("0" + seconds).slice(-2) +
+    "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
 if ($(".smart-scroll").length > 0) {
   // check if element exists
   var last_scroll_top = 0;
@@ -160,4 +187,21 @@ right.onclick = function () {
   if (item[0].classList.contains("active")) {
     left.style.display = "flex";
   }
+};
+
+popup_maker = document.querySelector(".popup_maker");
+popup = document.querySelector(".popup");
+x_close = document.querySelector(".x_close");
+html = document.querySelector("html");
+
+popup_maker.onclick = function () {
+  html.style.overflow = "hidden";
+  back_to_top.style.opacity = "0";
+  popup.style.top = 0;
+};
+
+x_close.onclick = function () {
+  html.style.overflow = "auto";
+  back_to_top.style.opacity = "1";
+  popup.style.top = "-100%";
 };

@@ -24,7 +24,6 @@ html {
 body {
   padding-top: 8rem;
   width: 100%;
-  overflow-x: hidden;
 }
 
 /* NavBar Design */
@@ -148,7 +147,7 @@ section.main {
 }
 
 .main_xp_pen {
-  margin: 8rem 0 0;
+  margin: 7rem 0 0;
   width: 22%;
 }
 
@@ -186,12 +185,12 @@ section.main {
 
 .main div {
   color: #fff;
-  margin: 3rem auto;
+  margin: 2rem auto;
   font-size: 1.8rem;
 }
 
 .main div.timer_container {
-  margin: 5rem 0 3rem;
+  margin: 3rem 0 3rem;
 }
 
 .news_lottie {
@@ -205,6 +204,13 @@ section.main {
   display: inline-block;
   color: #fff;
   font-size: 1.4rem;
+}
+
+.main .submit_here {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Section wwh */
@@ -727,56 +733,90 @@ section.links {
 }
 
 .links_holder {
-  width: 60rem;
+  text-align: center;
   margin: 10rem auto;
-  height: 18rem;
-  display: grid;
-  grid-column-gap: 5rem;
+  height: 20rem;
 }
 
-.grid_link {
-  text-align: center;
+.links_holder a:not(.popup_maker) {
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin: 1.5rem 5rem;
+  border-radius: 5rem;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.3rem;
-  border-radius: 5rem;
-  text-decoration: none;
   background-color: #198875;
+}
+
+.popup_maker {
+  display: inline-block;
+  color: #198875;
+  margin: 2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.popup_maker:hover {
+  color: #198875;
+}
+
+.popup {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: -100%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.popup_box {
+  position: absolute;
+  color: #198875;
+  width: 70%;
+  height: 60vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.popup_box h1 {
+  margin: 3rem;
+}
+
+.popup_flex {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.grid_link:hover {
-  color: #fff;
+.popup_box a {
+  font-size: 1.4rem;
+  color: #198875;
+  display: block;
+  margin: 2rem auto;
 }
 
-.grid_link.grid_link_1 {
-  grid-column: 1/2;
-  grid-row: 4/8;
-  background-color: #f6ca68;
+.popup_box a:hover {
+  color: #198875;
 }
 
-.grid_link.grid_link_2 {
-  grid-column: 1/2;
-  grid-row: 10/14;
-  background-color: #f6ca68;
-}
-
-.grid_link.grid_link_3 {
-  grid-column: 2/3;
-  grid-row: 1/5;
-}
-
-.grid_link.grid_link_4 {
-  grid-column: 2/3;
-  grid-row: 7/11;
-}
-
-.grid_link.grid_link_5 {
-  grid-column: 2/3;
-  grid-row: 13/17;
+.x_close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  color: #198875;
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
 }
 
 .links p {
@@ -790,6 +830,55 @@ section.links {
   width: 85%;
   margin: 0 auto 5rem;
   border: 0.5px solid rgba(25, 136, 117, 0.5);
+}
+
+/* Section Submissions */
+section.submissions {
+  text-align: center;
+  background: #d5e9e6;
+  padding: 10rem 10rem;
+}
+
+.submissions h1 {
+  text-align: left;
+  color: #198875;
+  font-size: 3rem;
+}
+
+.submissions .sub_phase1_link {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #198875;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 5rem;
+  border-radius: 5rem;
+  margin: 5rem 8rem;
+}
+
+.submissions .sub_phase1_link::after {
+  content: "Till 15 january";
+  position: absolute;
+  top: 150%;
+  left: 30%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.submissions .sub_phase2_link {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgba(196, 196, 196, 0.28);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 5rem;
+  border-radius: 5rem;
+  margin: 5rem 8rem;
+  cursor: not-allowed;
 }
 
 /* Section Partners */
@@ -1095,11 +1184,16 @@ a.naga:hover {
 
   .links_holder {
     width: 100%;
-    padding: 2rem 6rem;
+    padding: 0;
     margin: 5rem auto;
     height: auto;
     display: block;
   }
+
+  .popup_box {
+    height: 80vh;
+  }
+
   .grid_link {
     padding: 2rem 1rem;
     margin: 1rem auto;
