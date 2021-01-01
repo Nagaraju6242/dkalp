@@ -203,5 +203,5 @@ popup_maker.onclick = function () {
 x_close.onclick = function () {
   html.style.overflow = "auto";
   back_to_top.style.opacity = "1";
-  popup.style.top = "-100%";
+  popup.style.top = "-200%";
 };
