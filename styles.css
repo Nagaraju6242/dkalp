@@ -1096,7 +1096,7 @@ a.naga:hover {
   }
   .box.box_2 {
     top: 19%;
-    transform: translate(-50%, 0) scale(1.15);
+    transform: translate(-50%, -12%) scale(1.15);
   }
   .box.box_4 {
     top: 65%;
