@@ -620,6 +620,10 @@ section.webinars h1 {
 
 .cor-item {
   color: #198875;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -630,8 +634,17 @@ section.webinars h1 {
 .cor-item h3 {
   margin: 2rem;
   font-size: 1.6rem;
+  height: 3rem;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.cor-item.adjust h3 {
+  margin-top: 4.5rem;
+}
+
+.cor-item.adjust img:first-child {
+  transform: translateY(2rem) scale(1.05);
 }
 
 .cor-item p {
@@ -1262,6 +1275,10 @@ a.naga:hover {
 @media screen and (max-width: 550px) {
   .pgrid_box {
     height: 45rem;
+  }
+
+  .cor-item.mb_adjust {
+    transform: translateY(1.25rem);
   }
 }
 

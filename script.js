@@ -169,8 +169,6 @@ item = document.querySelectorAll(".carousel-item");
 left = document.querySelector(".carousel-control-prev");
 right = document.querySelector(".carousel-control-next");
 
-left.style.display = "none";
-
 left.onclick = function () {
   if (item[1].classList.contains("active")) {
     left.style.display = "none";
