@@ -592,6 +592,31 @@ section.webinars h1 {
   background-color: #f6ca68;
 }
 
+.grid_join_now {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem auto;
+  padding: 1rem 5rem;
+  color: #fff;
+}
+
+.grid_join_now.grid_join_now_first {
+  transform: translateY(25px);
+}
+
+.grid_join_now.grid_join_now_active {
+  background-color: #198875;
+  cursor: pointer;
+}
+
+.grid_join_now.grid_join_now_disabled {
+  cursor: not-allowed;
+  background-color: #e1e1e1;
+}
+
 .grid-cor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1158,6 +1183,15 @@ a.naga:hover {
 
   .grid-cor-blur::after {
     font-size: 3rem;
+  }
+
+  .grid_join_now {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .grid_join_now.grid_join_now_first {
+    transform: translateY(-10px);
   }
 
   .webinar_link {
