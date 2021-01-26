@@ -434,6 +434,22 @@ section.schedule {
   transform: scale(1.15);
 }
 
+.box.box_correction h3 {
+  position: relative;
+}
+
+.box.box_correction h3::before {
+  content: "05 Feb, 2021";
+  font-size: 1.2rem;
+  top: -80%;
+  left: 25%;
+  z-index: 1;
+  color: #f6ca68;
+  position: absolute;
+  text-decoration: line-through;
+  text-decoration-color: #fff;
+}
+
 .box.box_running p,
 .box.box_running h3 {
   color: #fff !important;
