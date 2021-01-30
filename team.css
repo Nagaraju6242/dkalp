@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #0d808b;
+}
+
+.animate_box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  padding: 5rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.faculty_card_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+
+.card {
+  width: 238px;
+  border-radius: 15px;
+  border: 2px solid #0d808b;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card div {
+  position: relative;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.card img.image {
+  width: 238px;
+}
+
+.card h4 {
+  font-size: 1.6rem;
+}
+
+.card p {
+  font-size: 1.3rem;
+}
+
+.card .linkedin {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+.card .linkedin img {
+  transform: scale(1.2);
+}
+
+.card .linkedin:focus {
+  outline: none;
+}
+
+/* Students Section starts */
+
+.students_card_holder {
+  margin: 5rem auto;
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  width: 100%;
+  row-gap: 8rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1900px) {
+  body {
+    padding: 10rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .faculty_card_holder {
+    padding: 5rem 0;
+  }
+
+  .students_card_holder {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faculty_card_holder {
+    flex-direction: column;
+  }
+  .faculty_card_holder .card {
+    margin: 2rem auto;
+  }
+
+  .students_card_holder {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .students_card_holder {
+    grid-template-columns: auto;
+  }
+}
