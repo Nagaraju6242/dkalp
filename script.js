@@ -1,6 +1,6 @@
 $(".back_to_top").hide();
 
-var countDownDate = new Date("Jan 21, 2021 00:00:00").getTime();
+var countDownDate = new Date("Feb 21, 2021 00:00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
