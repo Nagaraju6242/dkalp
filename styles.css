@@ -915,14 +915,13 @@ section.submissions {
 .submissions .sub_phase2_link {
   display: inline-block;
   font-size: 1.5rem;
-  background-color: rgba(196, 196, 196, 0.28);
-  color: #fff;
+  background-color: #fff;
+  color: #198875;
   font-weight: 700;
   text-decoration: none;
   padding: 1rem 5rem;
   border-radius: 5rem;
   margin: 5rem 8rem;
-  cursor: not-allowed;
 }
 
 /* Section Partners */
