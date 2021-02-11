@@ -40,11 +40,7 @@ nav {
   left: 0;
   width: 100%;
   height: 8rem;
-  background-image: radial-gradient(
-    90.52% 90.52% at 46.43% 6.37%,
-    #0d7f8b 0%,
-    #139e97 100%
-  );
+  background-color: #0d808b;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,8 +73,12 @@ nav div a {
   margin: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.2rem;
+}
+
+.nav_item.meet_the_team {
+  color: #fdbb44;
 }
 
 h1 {
@@ -183,5 +183,18 @@ h3 {
 @media screen and (max-width: 600px) {
   .students_card_holder {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    zoom: 110% !important;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 1900px) {
+  html {
+    zoom: 125% !important;
   }
 }

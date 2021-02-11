@@ -68,10 +68,42 @@ $(function () {
     } else {
       $(".back_to_top").show();
     }
+
+    if (ishalfElementInViewport($("#schedule"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_schedule").css("color", "#FDBB44");
+    } else if (ishalfElementInViewport($("#categories"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_categories").css("color", "#FDBB44");
+    } else if (ishalfElementInViewport($("#webinars"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_webinars").css("color", "#FDBB44");
+    } else if (ishalfElementInViewport($("#awards"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_awards").css("color", "#FDBB44");
+    } else if (ishalfElementInViewport($("#categories"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_categories").css("color", "#FDBB44");
+    } else if (ishalfElementInViewport($("#contact"))) {
+      $(".nav_item").css("color", "#198875");
+      $(".nav_contact").css("color", "#FDBB44");
+    } else {
+      $(".nav_item").css("color", "#198875");
+    }
   });
 });
 
 currdate = new Date();
+
+function ishalfElementInViewport(el) {
+  // Special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  // console.log(rect.top, rect.bottom);
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
 
 function isElementInViewport(el) {
   // Special bonus for those using jQuery
