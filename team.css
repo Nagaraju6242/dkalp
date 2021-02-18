@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,17 +38,19 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
   height: 8rem;
-  background-color: #0d808b;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 nav.scrolled-down {
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 
 nav.scrolled-up {
@@ -69,12 +71,47 @@ nav div {
 }
 
 nav div a {
-  color: #fff;
+  color: #0D808B;
   margin: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.mobile_links{
+  z-index: 10;
+  position: fixed;
+  width: 50%;
+  right: -50%;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile_links .hamburger_link{
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  margin: 0;
+}
+
+.hamburger_link{
+  display: none;
+}
+
+.mobile_links a{
+  color: #0D808B;
+  margin: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .nav_item.meet_the_team {
@@ -178,6 +215,22 @@ h3 {
     grid-template-columns: repeat(2, auto);
     justify-content: space-evenly;
   }
+
+  /* Mobile Screen Styling */
+  .mobile_links{
+    display: flex;
+  }
+
+  nav .links{
+    display: none;
+  }
+
+  .hamburger_link{
+    display: block;
+    margin: 0 4rem;
+    cursor: pointer;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
