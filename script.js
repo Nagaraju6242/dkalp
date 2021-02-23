@@ -1,31 +1,31 @@
 $(".back_to_top").hide();
 
-var countDownDate = new Date("Feb 21, 2021 00:00:00").getTime();
+// var countDownDate = new Date("Feb 21, 2021 00:00:00").getTime();
 
-var x = setInterval(function () {
-  var now = new Date().getTime();
+// var x = setInterval(function () {
+//   var now = new Date().getTime();
 
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   var distance = countDownDate - now;
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("timer").innerHTML =
-    ("0" + days).slice(-2) +
-    "d &nbsp;" +
-    ("0" + hours).slice(-2) +
-    "h &nbsp;" +
-    ("0" + minutes).slice(-2) +
-    "m &nbsp;" +
-    ("0" + seconds).slice(-2) +
-    "s ";
+//   document.getElementById("timer").innerHTML =
+//     ("0" + days).slice(-2) +
+//     "d &nbsp;" +
+//     ("0" + hours).slice(-2) +
+//     "h &nbsp;" +
+//     ("0" + minutes).slice(-2) +
+//     "m &nbsp;" +
+//     ("0" + seconds).slice(-2) +
+//     "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "CLOSED";
-  }
-}, 1000);
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("timer").innerHTML = "CLOSED";
+//   }
+// }, 1000);
 
 if ($(".smart-scroll").length > 0) {
   // check if element exists
@@ -201,22 +201,16 @@ item = document.querySelectorAll(".carousel-item");
 left = document.querySelector(".carousel-control-prev");
 right = document.querySelector(".carousel-control-next");
 
+right.style.display = "none";
+
 left.onclick = function () {
-  if (item[1].classList.contains("active")) {
-    left.style.display = "none";
-  }
-  if (item[2].classList.contains("active")) {
-    right.style.display = "flex";
-  }
+  left.style.display = "none";
+  right.style.display = "flex";
 };
 
 right.onclick = function () {
-  if (item[1].classList.contains("active")) {
-    right.style.display = "none";
-  }
-  if (item[0].classList.contains("active")) {
-    left.style.display = "flex";
-  }
+  right.style.display = "none";
+  left.style.display = "flex";
 };
 
 popup_maker = document.querySelector(".popup_maker");
