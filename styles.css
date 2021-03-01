@@ -1139,7 +1139,7 @@ a.naga:hover {
   }
   .box.box_2 {
     top: 19%;
-    transform: translate(-50%, -12%) scale(1.15);
+    transform: translate(-50%, -12%);
   }
   .box.box_4 {
     top: 65%;
@@ -1152,6 +1152,11 @@ a.naga:hover {
   .box.box_8 {
     display: none;
   }
+
+  .box_running{
+    transform: translate(-50%,0) scale(1.15) !important;
+  }
+
   .p_left {
     text-align: left;
   }
